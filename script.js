@@ -1,8 +1,8 @@
 
 // WEDDING COUNTDOWN
-// Wedding date: 13 December 2026, 6:00 PM
+// Wedding date: 13 December 2026, 7:00 PM
 
-const weddingDate = new Date("December 13, 2026 18:00:00").getTime();
+const weddingDate = new Date("December 13, 2026 19:00:00").getTime();
 
 function updateCountdown() {
 
