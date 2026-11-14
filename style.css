@@ -1708,6 +1708,15 @@ footer h2 {
   margin: 24px auto 0;
 }
 
+/* MOBILE COVER PHOTO FIX */
+
+@media (max-width: 768px) {
+  .hero-slide {
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
 .hero-actions .button {
   margin: 0;
 }
