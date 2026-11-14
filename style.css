@@ -1708,6 +1708,10 @@ footer h2 {
   margin: 24px auto 0;
 }
 
+.hero-actions .button {
+  margin: 0;
+}
+
 /* MOBILE COVER PHOTO FIX */
 
 @media (max-width: 768px) {
@@ -1715,8 +1719,4 @@ footer h2 {
     background-position: center center;
     background-size: cover;
   }
-}
-
-.hero-actions .button {
-  margin: 0;
 }
