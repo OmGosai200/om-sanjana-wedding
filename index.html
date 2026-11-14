@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Om & Sanjana | Wedding Invitation</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Music -->
+<audio id="weddingMusic" loop>
+  <source src="assets/music/wedding-music.mp3" type="audio/mpeg">
+</audio>
+
+  <!-- Welcome Section -->
+<header class="hero">
+  <div class="hero-bg">
+  <div class="hero-slide active" style="background-image: url('./assets/photos/cover.jpg');"></div>
+  <div class="hero-slide" style="background-image: url('./assets/photos/cover2.jpg');"></div>
+  <div class="hero-slide" style="background-image: url('./assets/photos/cover3.jpg');"></div>
+</div>
+  <div class="hero-content">
+
+    <p class="eyebrow">TOGETHER WITH OUR FAMILIES</p>
+
+    <div class="hero-divider">
+      <span></span>
+      <span>✦</span>
+      <span></span>
+    </div>
+
+    <p class="hero-intro">THE WEDDING CELEBRATION OF</p>
+
+    <h1>Om <span>&</span> Sanjana</h1>
+
+    <p class="invitation-text">
+      Joyfully invite you to celebrate our wedding
+    </p>
+
+    <div class="hero-date">
+      <span>13</span>
+      <div>
+        <p>DECEMBER</p>
+        <p>2026</p>
+      </div>
+    </div>
+
+    
+
+    <div class="hero-divider">
+      <span></span>
+      <span>✦</span>
+      <span></span>
+    </div>
+
+<div class="hero-actions">
+
+  <a href="#invitation" class="button">
+    Explore Invitation ↓
+  </a>
+
+  <button class="button music-button" onclick="toggleMusic()">
+    🎵 Play / Pause Music
+  </button>
+
+  <button class="button share-button" onclick="shareWeddingInvitation()">
+    Share Wedding Invitation ↗
+  </button>
+
+</div>
+
+</header>
+
+  </header>
+
+  <main>
+
+   
+<!-- INVITATION SECTION -->
+<section id="invitation" class="section invitation-section">
+
+  <p class="eyebrow">A BEAUTIFUL BEGINNING</p>
+
+  <div class="invitation-ornament">✦</div>
+
+  <h2>We Are Getting Married!</h2>
+
+  <p class="invitation-message">
+    With the blessings of our families,
+    we joyfully invite you to be part of
+    our special day.
+  </p>
+
+  <p class="gujarati invitation-gujarati">
+    આપની ઉપસ્થિતિ અમારા માટે આનંદની વાત રહેશે.
+  </p>
+
+  <div class="invitation-names">
+    <span>Om</span>
+    <span class="invitation-ampersand">&</span>
+    <span>Sanjana</span>
+  </div>
+
+  <p class="invitation-small-date">13 DECEMBER 2026</p>
+
+  <div class="invitation-bottom-line"></div>
+
+</section>
+
+
+<!-- COUNTDOWN SECTION -->
+<section class="section countdown-section">
+
+  <p class="eyebrow">Our Date Drop</p>
+
+  <h2>Counting Every Moment</h2>
+
+  <p class="countdown-intro">
+    Until we begin our forever together
+  </p>
+
+  <div class="countdown-decoration">✦</div>
+
+  <div id="countdown">
+    Loading countdown...
+  </div>
+
+</section>
+
+<!-- OUR STORY -->
+<section class="section our-story">
+
+  <p class="eyebrow">TWO HEARTS, ONE BEAUTIFUL JOURNEY</p>
+
+  <h2>Our Story</h2>
+
+  <div class="story-container">
+
+    <div class="story-image">
+      <img
+        src="assets/photos/cover.jpg"
+        alt="Om and Sanjana">
+    </div>
+
+    <div class="story-content">
+
+      <p class="story-names">
+        Om <span>&</span> Sanjana
+      </p>
+
+      <div class="story-divider"></div>
+
+      <h3>A Journey Called Forever</h3>
+
+      <p>
+        Two hearts, two families and one beautiful journey
+        that brings us together.
+      </p>
+
+      <p>
+        With the love and blessings of our families,
+        we are beginning a new chapter of our lives.
+        We would be delighted to have you with us
+        as we celebrate this special occasion.
+      </p>
+
+      <p class="story-gujarati">
+        પ્રેમ, વિશ્વાસ અને પરિવારના આશીર્વાદ સાથે,
+        અમે જીવનની નવી સફરની શરૂઆત કરવા જઈ રહ્યા છીએ.
+      </p>
+
+      <p class="story-signature">
+        With Love, Om & Sanjana
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- YOUR HOSTS -->
+<section class="section hosts-section" id="hosts">
+
+  <p class="eyebrow">WITH LOVE AND BLESSINGS</p>
+  <h2>Your Hosts</h2>
+  <p class="hosts-intro">
+    Meet the wonderful people who welcome you to our celebration.
+  </p>
+
+  <div class="hosts-grid">
+
+    <!-- FATHER -->
+    <div class="host-card reveal">
+      <div class="host-photo">
+        <img src="assets/photos/father.jpg" alt="Father">
+      </div>
+      <p class="host-role">FATHER</p>
+      <h3>Raju</h3>
+      <p class="host-description">
+        With love, blessings and wisdom, he has always been our guiding light and strongest support.
+      </p>
+    </div>
+
+    <!-- MOTHER -->
+    <div class="host-card reveal">
+      <div class="host-photo">
+        <img src="assets/photos/mother.jpg" alt="Mother">
+      </div>
+      <p class="host-role">MOTHER</p>
+      <h3>Parul</h3>
+      <p class="host-description">
+        With endless love, care and warmth, she has filled our lives with beautiful memories and blessings.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+    <!--Wedding Event-->
+<section class="wedding-schedule" id="events">
+
+  <div class="schedule-heading">
+    <p class="schedule-kicker">OUR WEDDING CELEBRATION</p>
+    <h2>Five ceremonies, two days</h2>
+    <p class="schedule-subtitle">
+      With love, we invite you to celebrate with us.
+    </p>
+  </div>
+
+  <div class="schedule-grid">
+
+    <div class="schedule-card reveal">
+      <span class="schedule-label">MANDAP MUHURAT</span>
+      <h3>Mandap Muhurat</h3>
+      <p class="schedule-gujarati">મંડપ મુહૂર્ત</p>
+      <p class="schedule-date">Saturday, December 12 · 10:00 AM</p>
+      <p class="schedule-venue">Home, Rajkot</p>
+      <div class="schedule-divider"></div>
+      <p class="schedule-description">
+        An auspicious beginning to our wedding celebrations.
+      </p>
+    </div>
+
+    <div class="schedule-card reveal">
+      <span class="schedule-label">HALDI</span>
+      <h3>Haldi Ceremony</h3>
+      <p class="schedule-gujarati">હલ્દી</p>
+      <p class="schedule-date">Saturday, December 12 · 5:00 PM</p>
+      <p class="schedule-venue">ADB Hotel, Rajkot</p>
+      <div class="schedule-divider"></div>
+      <p class="schedule-description">
+        A joyful celebration filled with blessings, colour and laughter.
+      </p>
+    </div>
+
+    <div class="schedule-card reveal">
+      <span class="schedule-label">SANGEET</span>
+      <h3>Sangeet Sandhya</h3>
+      <p class="schedule-gujarati">સંગીત સંધ્યા</p>
+      <p class="schedule-date">Saturday, December 12 · 7:00 PM</p>
+      <p class="schedule-venue">ADB Hotel, Rajkot</p>
+      <div class="schedule-divider"></div>
+      <p class="schedule-description">
+        An evening of music, dance and unforgettable memories.
+      </p>
+    </div>
+
+    <div class="schedule-card reveal">
+      <span class="schedule-label">JAAN PRASHTHAN</span>
+      <h3>Jaan Prasthan</h3>
+      <p class="schedule-gujarati">જાન પ્રસ્થાન</p>
+      <p class="schedule-date">Sunday, December 13 · 10:00 AM</p>
+      <p class="schedule-venue">Home, Rajkot</p>
+      <div class="schedule-divider"></div>
+      <p class="schedule-description">
+        Join us as we begin the auspicious wedding procession.
+      </p>
+    </div>
+
+    <div class="schedule-card reveal">
+      <span class="schedule-label">WEDDING</span>
+      <h3>Wedding Ceremony</h3>
+      <p class="schedule-gujarati">લગ્ન સમારોહ</p>
+      <p class="schedule-date">Sunday, December 13 · 6:00 PM</p>
+      <p class="schedule-venue">Navdurga Temple, Sutrapada</p>
+      <div class="schedule-divider"></div>
+      <p class="schedule-description">
+        Two hearts, one promise, a lifetime of togetherness.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</section>
+
+<!-- PHOTO GALLERY -->
+<section class="section gallery-section" id="gallery">
+
+  <p class="eyebrow">OUR MEMORIES</p>
+  <h2>Moments to Remember</h2>
+
+  <p class="gallery-intro">
+    Every picture tells a little story of our journey together.
+  </p>
+
+  <div class="gallery">
+
+    <img src="assets/photos/photo1.jpg" alt="Om and Sanjana">
+    <img src="assets/photos/photo2.jpg" alt="Our memories">
+    <img src="assets/photos/photo3.jpg" alt="Our celebration">
+    <img src="assets/photos/photo4.jpg" alt="Wedding memory">
+    <img src="assets/photos/photo5.jpg" alt="Wedding memory">
+    <img src="assets/photos/photo6.jpg" alt="Wedding memory">
+
+  </div>
+
+</section>
+
+<!-- WEDDING VENUES -->
+<section class="section venue-section" id="venue">
+
+  <p class="eyebrow">JOIN OUR CELEBRATION</p>
+
+  <h2>Find Your Way to Us</h2>
+
+  <p class="venue-description">
+    We look forward to celebrating these special moments with you.
+  </p>
+
+  <div class="venue-grid">
+
+    <!-- 12 DECEMBER -->
+    <div class="venue-card">
+      <p class="venue-day">DAY ONE · 12 DECEMBER 2026</p>
+      <h3>Haldi & Sangeet</h3>
+      <p>Location for Haldi and Sangeet ceremonies</p>
+
+      <a
+        class="venue-button"
+        href="https://maps.app.goo.gl/KPdPadW35Udbf2NB8"
+        target="_blank"
+        rel="noopener">
+        Open Google Maps ↗
+      </a>
+    </div>
+
+    <!-- 13 DECEMBER -->
+    <div class="venue-card">
+      <p class="venue-day">DAY TWO · 13 DECEMBER 2026</p>
+      <h3>Wedding Ceremony</h3>
+      <p>Location for the Wedding Ceremony</p>
+
+      <a
+        class="venue-button"
+        href="https://maps.app.goo.gl/uwrph5PM1gRzdoSH9"
+        target="_blank"
+        rel="noopener">
+        Open Google Maps ↗
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+    
+<!-- RSVP SECTION -->
+<section class="section rsvp-section" id="rsvp">
+
+  <p class="eyebrow">KINDLY REPLY</p>
+
+  <h2>Will You Join Us?</h2>
+
+  <p class="rsvp-intro">
+    Your presence will make our celebration even more special.
+  </p>
+
+  <p class="rsvp-gujarati">
+    આપની ઉપસ્થિતિ અમારા માટે આનંદની વાત રહેશે.
+  </p>
+
+  <div class="rsvp-card">
+
+    <form id="rsvpForm">
+
+      <label for="guestName">Your Name</label>
+
+      <input
+        type="text"
+        id="guestName"
+        placeholder="Enter your full name"
+        required>
+
+      <label for="guestResponse">Will you attend?</label>
+
+      <select id="guestResponse" required>
+        <option value="">Please select</option>
+        <option value="Yes, I will attend">Yes, I will attend</option>
+        <option value="Sorry, I cannot attend">Sorry, I cannot attend</option>
+      </select>
+
+      <label for="guestMessage">A message for the couple (optional)</label>
+
+      <textarea
+        id="guestMessage"
+        rows="3"
+        placeholder="Write your wishes here..."></textarea>
+
+      <button type="submit" class="button">
+        Send RSVP on WhatsApp
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <h2>Om & Sanjana</h2>
+    <p>Made with love ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1713 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #faf7f0;
+  color: #42372d;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(250,247,240,.78), rgba(250,247,240,.88)),
+    url('assets/photos/cover.jpg') center/cover;
+}
+
+.eyebrow {
+  color: #a98550;
+  letter-spacing: 4px;
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+h1, h2, footer h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: clamp(55px, 10vw, 100px);
+  line-height: 1.2;
+  color: #574331;
+}
+
+h1 span {
+  color: #bd9a62;
+  font-style: italic;
+}
+
+.gujarati {
+  font-size: 22px;
+  margin: 12px 0;
+}
+
+.invitation-text {
+  margin-top: 25px;
+}
+
+.wedding-date {
+  margin-top: 25px;
+  color: #a98550;
+  letter-spacing: 3px;
+}
+
+.venue {
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #a98550;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+
+.button:hover {
+  background: #80633d;
+  transform: translateY(-2px);
+}
+
+.section {
+  padding: 90px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 42px;
+  color: #6b5137;
+  margin-bottom: 20px;
+}
+
+.countdown-section {
+  background: #f0e9dc;
+  max-width: 100%;
+}
+
+#countdown {
+  font-size: 22px;
+  color: #a98550;
+  margin-top: 25px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+a {
+  color: #a98550;
+}
+
+form {
+  max-width: 450px;
+  margin: 30px auto 0;
+  display: grid;
+  gap: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d8c8ad;
+  background: #fffdf8;
+  font: inherit;
+}
+
+footer {
+  padding: 45px 20px;
+  background: #e9dfcf;
+}
+
+footer h2 {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 65px 20px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  .gallery img {
+    height: 250px;
+  }
+}
+
+
+/* WEDDING EVENTS */
+
+.events-section {
+  padding: 100px 20px;
+}
+
+.event-intro {
+  max-width: 520px;
+  margin: 0 auto 50px;
+  color: #817365;
+}
+
+.event-day {
+  max-width: 650px;
+  margin: 65px auto;
+}
+
+.event-day-label {
+  color: #bd9a62;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+.event-date {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  font-weight: 500;
+  color: #6b5137;
+  margin: 8px 0 0;
+}
+
+.event-subtitle {
+  color: #a98550;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.event-card {
+  position: relative;
+  max-width: 480px;
+  margin: 22px auto;
+  padding: 35px 25px;
+  background: #fffdf8;
+  border: 1px solid #dfceb0;
+  box-shadow: 0 12px 35px rgba(90, 65, 35, 0.07);
+}
+
+.event-number {
+  color: #bd9a62;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+}
+
+.event-card h3 {
+  color: #6b5137;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.event-gujarati {
+  color: #a98550;
+  font-size: 19px;
+  margin: 8px 0;
+}
+
+.event-line {
+  width: 55px;
+  height: 1px;
+  background: #bd9a62;
+  margin: 22px auto;
+}
+
+.event-time {
+  font-size: 17px;
+  color: #80633d;
+  letter-spacing: 2px;
+}
+
+.wedding-highlight {
+  background: #f0e9dc;
+  border: 1px solid #bd9a62;
+}
+
+.event-special {
+  color: #a98550;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-top: 15px;
+}
+
+.event-location {
+  color: #a98550;
+  letter-spacing: 2px;
+  margin-top: 35px;
+}
+
+@media (max-width: 600px) {
+  .event-date {
+    font-size: 32px;
+  }
+
+  .event-card {
+    padding: 30px 18px;
+  }
+}
+
+
+/* EVENT CARD GRID */
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 30px auto;
+  align-items: stretch;
+}
+
+.event-card {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+  padding: 35px 15px;
+  background: #fffdf8;
+  border: 1px solid #dfceb0;
+  box-shadow: 0 12px 35px rgba(90, 65, 35, 0.07);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-card h3 {
+  font-size: 27px;
+}
+
+.wedding-highlight {
+  background: #f0e9dc;
+  border: 1px solid #bd9a62;
+}
+
+/* TABLET */
+@media (max-width: 800px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 520px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* PERFECT SQUARE WEDDING EVENT CARDS */
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  justify-content: center;
+  align-items: stretch;
+  gap: 18px;
+  margin: 30px auto;
+}
+
+.event-grid .event-card {
+  width: 220px;
+  height: 220px;
+  aspect-ratio: 1 / 1;
+  max-width: none;
+  min-height: 0;
+  margin: 0;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centre the two Day Two cards */
+
+.event-grid.day-two-grid {
+  grid-template-columns: repeat(2, 220px);
+  justify-content: center;
+}
+
+/* Keep the design responsive */
+
+@media (max-width: 760px) {
+  .event-grid {
+    grid-template-columns: repeat(2, minmax(0, 220px));
+  }
+
+  .event-grid.day-two-grid {
+    grid-template-columns: repeat(2, minmax(0, 220px));
+  }
+}
+
+@media (max-width: 500px) {
+  .event-grid,
+  .event-grid.day-two-grid {
+    grid-template-columns: minmax(0, 260px);
+  }
+
+  .event-grid .event-card {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+/* FINAL FIX: SQUARE EVENT CARDS */
+
+.event-grid .event-card {
+  width: 220px;
+  height: 220px;
+  min-height: 220px;
+  box-sizing: border-box;
+  padding: 14px;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  overflow: hidden;
+}
+
+/* Remove unwanted default spacing */
+
+.event-grid .event-card > * {
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+/* Event number */
+
+.event-grid .event-number {
+  font-size: 23px;
+  line-height: 1.1;
+}
+
+/* Event title */
+
+.event-grid .event-card h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 4px 0;
+}
+
+/* Gujarati text */
+
+.event-grid .event-gujarati {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Small decorative line */
+
+.event-grid .event-line {
+  margin: 8px auto;
+  flex-shrink: 0;
+}
+
+/* Event timing */
+
+.event-grid .event-time {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+/* Wedding highlight text */
+
+.event-grid .event-special {
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-top: 3px;
+}
+
+/* Mobile layout */
+
+@media (max-width: 500px) {
+  .event-grid .event-card {
+    width: 250px;
+    height: 250px;
+    min-height: 250px;
+  }
+}
+
+
+/* OUR STORY SECTION */
+
+.our-story {
+  max-width: 1100px;
+  padding: 110px 25px;
+}
+
+.story-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+  margin-top: 45px;
+  text-align: left;
+}
+
+.story-image {
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  border: 8px solid #fffdf8;
+  box-shadow: 0 12px 35px rgba(90, 65, 35, 0.10);
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.story-content {
+  padding: 20px;
+}
+
+.story-names {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  color: #6b5137;
+}
+
+.story-names span {
+  color: #bd9a62;
+  font-style: italic;
+}
+
+.story-divider {
+  width: 65px;
+  height: 1px;
+  background: #bd9a62;
+  margin: 22px 0;
+}
+
+.story-content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #80633d;
+  margin-bottom: 18px;
+}
+
+.story-content p {
+  margin-bottom: 18px;
+  color: #817365;
+}
+
+.story-content .story-gujarati {
+  color: #a98550;
+  font-size: 17px;
+}
+
+.story-signature {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 23px;
+  font-style: italic;
+  color: #a98550 !important;
+  margin-top: 25px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 700px) {
+
+  .story-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .story-image {
+    height: 420px;
+  }
+
+  .story-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .story-divider {
+    margin: 20px auto;
+  }
+
+  .story-names {
+    font-size: 40px;
+  }
+
+}
+
+
+/* RSVP SECTION */
+
+.rsvp-section {
+  padding: 100px 20px;
+  background: #f0e9dc;
+  max-width: 100%;
+}
+
+.rsvp-intro {
+  max-width: 500px;
+  margin: 0 auto 12px;
+  color: #817365;
+}
+
+.rsvp-gujarati {
+  color: #a98550;
+  margin-bottom: 35px;
+}
+
+.rsvp-card {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background: #fffdf8;
+  border: 1px solid #dfceb0;
+  box-shadow: 0 12px 35px rgba(90, 65, 35, 0.07);
+}
+
+.rsvp-card form {
+  display: grid;
+  gap: 12px;
+  text-align: left;
+}
+
+.rsvp-card label {
+  color: #80633d;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.rsvp-card input,
+.rsvp-card select,
+.rsvp-card textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #dfceb0;
+  background: #faf7f0;
+  color: #42372d;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.rsvp-card textarea {
+  resize: vertical;
+}
+
+.rsvp-card .button {
+  margin-top: 15px;
+}
+
+@media (max-width: 500px) {
+  .rsvp-card {
+    padding: 25px 18px;
+  }
+}
+
+/* LUXURY WEDDING EVENT SCHEDULE */
+
+.wedding-schedule {
+  background: #faf7f2;
+  padding: 75px 5%;
+  border: 1px solid #e8ded0;
+  border-radius: 12px;
+  max-width: 1250px;
+  margin: 45px auto;
+}
+
+.schedule-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.schedule-kicker {
+  color: #b58a3a;
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin-bottom: 12px;
+}
+
+.schedule-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-weight: normal;
+  color: #49353a;
+  margin: 0 0 10px;
+}
+
+.schedule-subtitle {
+  color: #796b65;
+  font-size: 14px;
+}
+
+.schedule-grid {
+  max-width: 1088px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 13px;
+}
+
+.schedule-card {
+  grid-column: span 2;
+  position: relative;
+  background: #fff;
+  border: 1px solid #e7d8c7;
+  border-radius: 7px;
+  padding: 20px 18px;
+  min-height: 185px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.schedule-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 16px;
+  width: 27px;
+  height: 2px;
+  background: #c59a45;
+}
+
+.schedule-card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.schedule-card:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+.schedule-label {
+  color: #b58a3a;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  margin-bottom: 9px;
+}
+
+.schedule-card h3 {
+  font-family: Georgia, serif;
+  color: #794451;
+  font-size: 23px;
+  font-weight: normal;
+  margin: 0 0 5px;
+}
+
+.schedule-gujarati {
+  color: #8c6a62;
+  font-size: 13px;
+  margin: 0 0 8px;
+}
+
+.schedule-card .schedule-date {
+  display: block;
+  color: #403638;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 6px 0 8px;
+}
+
+.schedule-venue {
+  color: #927d6b;
+  font-size: 12px;
+  font-style: italic;
+  margin: 0;
+}
+
+.schedule-divider {
+  width: 100%;
+  height: 1px;
+  background: #e8d9c8;
+  margin: 13px 0 10px;
+}
+
+.schedule-description {
+  color: #514747;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .wedding-schedule {
+    padding: 50px 16px;
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .schedule-card,
+  .schedule-card:nth-child(4),
+  .schedule-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .schedule-card:last-child {
+    grid-column: 1 / -1;
+    width: 50%;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-card,
+  .schedule-card:last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .schedule-heading h2 {
+    font-size: 27px;
+  }
+}
+
+/* Make event dates clearly visible */
+.schedule-card .schedule-date {
+  display: block !important;
+  visibility: visible !important;
+  color: #49353a !important;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+/* Wedding dates - regular reference style */
+.wedding-schedule .schedule-card .schedule-date {
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  color: #403638 !important;
+  font-family: inherit;
+  margin: 6px 0 8px;
+}
+
+/* LUXURY WEDDING COVER */
+
+.hero {
+  min-height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 65px 20px;
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      rgba(25, 17, 17, 0.43),
+      rgba(25, 17, 17, 0.58)
+    ),
+    url("./assets/photos/cover.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #fffaf2;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  border: 1px solid rgba(220, 187, 125, 0.8);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 850px;
+}
+
+.hero .eyebrow {
+  font-size: 11px;
+  letter-spacing: 5px;
+  color: #e7c98f;
+  margin-bottom: 20px;
+}
+
+.hero-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin: 20px auto;
+  color: #d9b878;
+}
+
+.hero-divider span:first-child,
+.hero-divider span:last-child {
+  width: 45px;
+  height: 1px;
+  background: #d9b878;
+}
+
+.hero-intro {
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin: 25px 0 12px;
+  color: #f0dfc0;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 8vw, 88px);
+  font-weight: normal;
+  line-height: 1.15;
+  margin: 0;
+  color: #fffaf2;
+}
+
+.hero h1 span {
+  color: #d9b878;
+  font-style: italic;
+}
+
+.hero .gujarati {
+  font-size: 23px;
+  margin: 12px 0;
+  color: #f0dfc0;
+}
+
+.hero .invitation-text {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.hero-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin: 28px auto;
+  color: #f5e4c2;
+}
+
+.hero-date > span {
+  font-family: Georgia, serif;
+  font-size: 65px;
+  line-height: 1;
+}
+
+.hero-date div {
+  text-align: left;
+  border-left: 1px solid #d9b878;
+  padding-left: 13px;
+}
+
+.hero-date div p {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: 5px 0;
+}
+
+.hero .venue {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #f0dfc0;
+}
+
+.hero .button {
+  display: inline-block;
+  margin: 8px 5px;
+}
+
+.hero .music-button {
+  background: transparent;
+  color: #fffaf2;
+  border: 1px solid #d9b878;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 85vh;
+    padding: 55px 20px;
+    background-position: center;
+  }
+
+  .hero::before {
+    inset: 10px;
+  }
+
+  .hero .eyebrow {
+    letter-spacing: 3px;
+  }
+
+  .hero .invitation-text {
+    font-size: 16px;
+  }
+
+  .hero-date > span {
+    font-size: 55px;
+  }
+}
+
+/* LUXURY WEDDING TEXT REVEAL */
+
+@keyframes elegantReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+    filter: blur(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.hero-content > * {
+  opacity: 0;
+  animation: elegantReveal 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-content > *:nth-child(1) { animation-delay: 0.2s; }
+.hero-content > *:nth-child(2) { animation-delay: 0.5s; }
+.hero-content > *:nth-child(3) { animation-delay: 0.7s; }
+.hero-content > *:nth-child(4) { animation-delay: 0.9s; }
+.hero-content > *:nth-child(5) { animation-delay: 1.2s; }
+.hero-content > *:nth-child(6) { animation-delay: 1.5s; }
+.hero-content > *:nth-child(7) { animation-delay: 1.8s; }
+.hero-content > *:nth-child(8) { animation-delay: 2.1s; }
+.hero-content > *:nth-child(9) { animation-delay: 2.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-content > * {
+    opacity: 1;
+    animation: none;
+    filter: none;
+    transform: none;
+  }
+}
+
+/* ELEGANT INVITATION SECTION */
+
+.invitation-section {
+  background: #faf7f2;
+  text-align: center;
+  padding: 85px 20px;
+  border-bottom: 1px solid #eadfce;
+}
+
+.invitation-section .eyebrow {
+  color: #b58a3a;
+  letter-spacing: 4px;
+  font-size: 11px;
+}
+
+.invitation-ornament {
+  color: #c49a50;
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.invitation-section h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 5vw, 46px);
+  font-weight: normal;
+  color: #68404a;
+  margin: 15px 0 22px;
+}
+
+.invitation-message {
+  max-width: 520px;
+  margin: auto;
+  color: #665b55;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.invitation-gujarati {
+  color: #987b65;
+  font-size: 17px;
+  margin-top: 18px;
+}
+
+.invitation-names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 35px 0 15px;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  color: #794451;
+}
+
+.invitation-ampersand {
+  color: #c49a50;
+  font-style: italic;
+}
+
+.invitation-small-date {
+  color: #ad8746;
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin-top: 18px;
+}
+
+.invitation-bottom-line {
+  width: 65px;
+  height: 1px;
+  background: #c49a50;
+  margin: 28px auto 0;
+}
+
+
+/* COUNTDOWN SECTION */
+
+.countdown-section {
+  background: #f4eee5;
+  text-align: center;
+  padding: 75px 20px;
+}
+
+.countdown-section .eyebrow {
+  color: #b58a3a;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+.countdown-section h2 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: clamp(30px, 5vw, 42px);
+  color: #68404a;
+  margin: 15px 0;
+}
+
+.countdown-intro {
+  color: #786b63;
+  font-size: 14px;
+}
+
+.countdown-decoration {
+  color: #c49a50;
+  margin: 22px 0;
+  font-size: 20px;
+}
+
+.countdown-section #countdown {
+  max-width: 750px;
+  margin: 25px auto 0;
+  padding: 25px;
+  background: #fffdf9;
+  border: 1px solid #e5d5c2;
+  border-radius: 8px;
+  color: #68404a;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .invitation-section,
+  .countdown-section {
+    padding: 60px 18px;
+  }
+
+  .invitation-names {
+    font-size: 28px;
+    gap: 10px;
+  }
+}
+
+/* LUXURY FOUR-BOX COUNTDOWN */
+
+.countdown-section #countdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  max-width: 750px;
+  margin: 30px auto 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.countdown-box {
+  background: #fffdf9;
+  border: 1px solid #e5d5c2;
+  border-radius: 7px;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.countdown-box span {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  color: #794451;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.countdown-box small {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #b58a3a;
+}
+
+@media (max-width: 500px) {
+  .countdown-section #countdown {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .countdown-box {
+    padding: 22px 8px;
+  }
+
+  .countdown-box span {
+    font-size: 34px;
+  }
+}
+
+/* LUXURY PHOTO GALLERY */
+
+.gallery-section {
+  background: #faf7f2;
+  text-align: center;
+  padding: 80px 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gallery-section h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 5vw, 42px);
+  font-weight: normal;
+  color: #68404a;
+  margin: 15px 0;
+}
+
+.gallery-intro {
+  color: #796b63;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.gallery {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  box-sizing: border-box;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border: 1px solid #e5d5c2;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.035);
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .gallery img {
+    height: 230px;
+  }
+}
+
+/* WEDDING VENUE */
+
+.venue-section {
+  background: #f4eee5;
+  text-align: center;
+  padding: 75px 20px;
+}
+
+.venue-ornament {
+  color: #c49a50;
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.venue-name {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  color: #794451;
+  margin: 20px 0 10px;
+}
+
+.venue-description {
+  color: #796b63;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.venue-button {
+  display: inline-block;
+  padding: 14px 25px;
+  background: #ad874d;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  border: 1px solid #ad874d;
+  transition: 0.3s ease;
+}
+
+.venue-button:hover {
+  background: #89683d;
+  border-color: #89683d;
+}
+
+@media (max-width: 650px) {
+  .gallery {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-main {
+    height: 330px;
+  }
+
+  .gallery-side {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 160px;
+    gap: 10px;
+  }
+
+  .gallery-section {
+    padding: 60px 18px;
+  }
+}
+
+/* TWO WEDDING VENUE LOCATIONS */
+
+.venue-grid {
+  max-width: 850px;
+  margin: 35px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.venue-card {
+  background: #fffdf9;
+  border: 1px solid #e5d5c2;
+  border-radius: 8px;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.venue-day {
+  color: #b58a3a;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.venue-card h3 {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  font-weight: normal;
+  color: #794451;
+  margin: 12px 0;
+}
+
+.venue-card > p:not(.venue-day) {
+  color: #796b63;
+  font-size: 13px;
+  margin: 15px 0 25px;
+}
+
+@media (max-width: 600px) {
+  .venue-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* EVENT GOOGLE MAPS LINKS */
+
+.schedule-location-link {
+  display: inline-block;
+  color: #ad874d;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-bottom: 1px solid #d9bd8b;
+  padding-bottom: 3px;
+  margin-top: 10px;
+}
+
+.schedule-location-link:hover {
+  color: #794451;
+  border-color: #794451;
+}
+
+.share-button {
+  background: transparent;
+  color: #ad874d;
+  border: 1px solid #ad874d;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.share-button:hover {
+  background: #ad874d;
+  color: white;
+}
+
+/* YOUR HOSTS SECTION */
+
+.hosts-section {
+  background: #f8f4ed;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hosts-intro {
+  color: #796b63;
+  font-size: 14px;
+  margin: 12px auto 35px;
+}
+
+.hosts-grid {
+  max-width: 900px;
+  margin: 35px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+.host-card {
+  background: #fffdf9;
+  border: 1px solid #e5d5c2;
+  border-radius: 8px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 600px;
+}
+
+.host-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  height: auto;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 22px;
+  flex-shrink: 0;
+}
+
+.host-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+.host-role {
+  color: #ad874d;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.host-card h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: normal;
+  color: #794451;
+  margin: 8px 0 12px;
+}
+
+.host-description {
+  color: #796b63;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .hosts-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .host-card {
+    min-height: auto;
+  }
+
+  .host-photo {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+/* HOST CARDS SCROLL ANIMATION */
+
+.host-card.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+}
+
+.host-card.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slight delay for the second card */
+.host-card.reveal:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .host-card.reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
+/* GALLERY SCROLL ANIMATION */
+
+.gallery img {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.gallery img.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery img:nth-child(2),
+.gallery img:nth-child(5) {
+  transition-delay: 0.15s;
+}
+
+.gallery img:nth-child(3),
+.gallery img:nth-child(6) {
+  transition-delay: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery img {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* WEDDING EVENTS SCROLL ANIMATION */
+
+.schedule-card.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.schedule-card.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.schedule-card.reveal:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.schedule-card.reveal:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.schedule-card.reveal:nth-child(4) {
+  transition-delay: 0.15s;
+}
+
+.schedule-card.reveal:nth-child(5) {
+  transition-delay: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .schedule-card.reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* LUXURY CINEMATIC HERO */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* HERO PHOTO SLIDESHOW */
+
+.hero-bg {
+  position: absolute;
+  inset: -5%;
+  z-index: 0;
+  pointer-events: none;
+  animation: cinematicDrift 35s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes cinematicDrift {
+  from {
+    transform: scale(1.06) translateY(-1.5%);
+  }
+  to {
+    transform: scale(1.06) translateY(1.5%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg {
+    animation: none;
+  }
+
+  .hero-slide {
+    transition: none;
+  }
+}
+
+/* LUXURY CINEMATIC HERO */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* HERO PHOTO SLIDESHOW */
+
+/* HERO PHOTO SLIDESHOW */
+
+.hero-bg {
+  position: absolute;
+  inset: -5%;
+  z-index: 0;
+  pointer-events: none;
+  animation: cinematicDrift 35s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.8s ease-in-out, visibility 1.8s ease-in-out;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.38);
+}
+
+.hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes cinematicDrift {
+  from {
+    transform: scale(1.06) translateY(-1.5%);
+  }
+  to {
+    transform: scale(1.06) translateY(1.5%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg {
+    animation: none;
+  }
+
+  .hero-slide {
+    transition: none;
+  }
+}
+
+/* CENTERED HERO BUTTON GROUP */
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  margin: 24px auto 0;
+}
+
+.hero-actions .button {
+  margin: 0;
+}
