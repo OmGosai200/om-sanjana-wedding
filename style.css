@@ -1730,3 +1730,13 @@ footer h2 {
     object-fit: contain;
   }
 }
+
+/* MOBILE COVER 3 POSITION */
+
+@media (max-width: 768px) {
+  .hero-slide.cover3-slide {
+    background-position: center center;
+    background-size: contain;
+    background-color: #000;
+  }
+}
