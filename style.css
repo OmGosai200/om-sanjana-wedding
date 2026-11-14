@@ -1720,3 +1720,13 @@ footer h2 {
     background-size: cover;
   }
 }
+
+/* MOBILE GALLERY - SHOW COMPLETE PHOTOS */
+
+@media (max-width: 768px) {
+  .gallery img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+}
